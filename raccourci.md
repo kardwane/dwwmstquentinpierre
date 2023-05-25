@@ -38,3 +38,13 @@ selectionner une ligne complete à la souris
 ```
 triple clic
 ```
+
+séléctionner une ligne complete au clavier
+```
+ctrl + l
+```
+
+séléctionner plusieurs lignes pour l'édition
+```code
+ctrl+alt+fleche (haut ou bas)
+```
