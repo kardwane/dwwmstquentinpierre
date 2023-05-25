@@ -1,5 +1,5 @@
 // // un tableau est une variable particuliere, dans le sens ou elle peut contenir plusieurs valeurs
-const tableauEntierSimple = [45, 89, 23, 98, 56, 13, 45, 63];
+let tableauEntierSimple = [45, 89, 23, 98, 56, 13, 45, 63];
 
 // // on est pas limité en nombre de valeur
 // // on est pas limité en type de valeur
@@ -48,3 +48,21 @@ for(valeur of tableauEntierSimple){
 tableauEntierSimple.map((value,indice)=>{
     console.log(`cellule n° ${indice} : ${value}`);
 });
+
+console.log("================================================================");
+console.log(tableauEntierSimple);
+
+// pour ajouter une nouvelle a mon tableau, je peux utiliser la méthode push
+//exemple pour la valeur 789 au tableau tableauEntierSimple : 
+tableauEntierSimple.push(789);
+
+console.log("================================================================");
+console.log(tableauEntierSimple);
+
+//si on veut supprimer une case sur un tableau, on peut utiliser la methode splice
+//pour retier la 3eme case : 
+
+tableauEntierSimple.splice(2, 1);
+
+console.log("================================================================");
+console.log(tableauEntierSimple);
