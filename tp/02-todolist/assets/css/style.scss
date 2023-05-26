@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	margin: auto 5vw;
+    display: grid;
+    grid-template-rows: auto auto 10vh;
+    min-height: 100vh;
+	header {
+		img {
+			width: 70vw;
+		}
+	}
+	form {
+		align-self: center;
+		margin-bottom: 2vh;
+		input {
+			padding: 0.5em;
+		}
+	}
+	#todoList {
+		article {
+			display: flex;
+			align-content: space-around;
+			margin-top: 1vh;
+			section {
+				align-self: center;
+				&:first-child {
+					width: 70vw;
+				}
+				&:last-child {
+					width: 20vw;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+header,
+footer {
+	text-align: center;
+}
+
+button {
+	padding: 0.5em;
+}
+
+.icone {
+	width: 32px;
+}
+
+.strike {
+	text-decoration: line-through;
+}
+
+.dark-mode {
+	background-color: #24292e;
+	color: aliceblue;
+}
+
+// @media screen and (max-width: 1080px) {
+// 	.banniere {
+// 		width: 70vw;
+// 	}
+// }
+
+@media screen and (max-width: 520px) {
+	.icone {
+		width: 24px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.icone {
+		width: 1.3em;
+	}
+}
