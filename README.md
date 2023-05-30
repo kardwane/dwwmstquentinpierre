@@ -20,4 +20,4 @@ Ce dépot contient des cours, des exemple de codes et des corrections d'exercice
 - le format JSON
 - l'api fetch
 
-La partie syntaxe contient des exercices d'algorithmique que vous devez adaptez aux langages JS. vous pouvez prendre des libértés avec les énoncés tant que le fond de l'exercice est correctement fait
+La partie syntaxe contient des exercices d'algorithmique que vous devez adaptez aux langages JS. vous pouvez prendre des libertés avec les énoncés tant que le fond de l'exercice est correctement fait.
