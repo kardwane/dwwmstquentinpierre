@@ -9,7 +9,7 @@ Ce dépot contient des cours, des exemple de codes et des corrections d'exercice
   - condition si
   - boucles
   - tableaux
-  - fonction
+  - fonctions
 - La gestion du DOM
   - manipulation du DOM
   - les évenements
@@ -19,3 +19,5 @@ Ce dépot contient des cours, des exemple de codes et des corrections d'exercice
 - le localstorage
 - le format JSON
 - l'api fetch
+
+La partie syntaxe contient des exercices d'algorithmique que vous devez adaptez aux langages JS. vous pouvez prendre des libértés avec les énoncés tant que le fond de l'exercice est correctement fait
