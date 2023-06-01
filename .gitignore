@@ -1,13 +1,14 @@
 # cours
 01-syntaxe/05-fonctions/coursnw
 01-syntaxe/05-fonctions/exo/prep
-02-dom
-03-date-delai-interval
-04-apiform
-05-regex
-06-storage
-07-json
-08-fetch
+02-dom/nw
+03-date-delai-interval/nw
+04-apiform/cours/*
+04-apiform/nw
+05-regex/nw
+06-storage/nw
+07-json/nw
+08-fetch/nw
 
 #tp
 tp/01-juste-prix
