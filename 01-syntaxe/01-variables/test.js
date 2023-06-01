@@ -26,5 +26,15 @@
 // console.log(strReverse("Hello"));
 
 //? connaitre l'url de la page en cours
-console.log(document.location);
-console.log(document.URL);
+// console.log(document.location);
+// console.log(document.URL);
+
+const etat = true;
+
+if(etat) {
+    console.log('ok');
+}
+
+const tab=[12,12,12,12]
+
+tab.length = strReverse
