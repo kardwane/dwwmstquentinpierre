@@ -1,6 +1,6 @@
 //! les fonctions, elles permettent d'isoler un bout de code du reste du programme, dans le but de pouvoir appeler une meme action a différent du code sans devoir réccrire l'action en question
 
-//la syntaxe, on commence par le mot clé fonctions, ensuite on nomme notre fonction, puis on ouvre les parantheses et enfin on met l'action de la fonction entre accolades
+//?la syntaxe, on commence par le mot clé fonctions, ensuite on nomme notre fonction, puis on ouvre les parantheses et enfin on met l'action de la fonction entre accolades
 // function salutationGlobal() {
 // 	//l'action de la fonction est ecrite entre les accolades
 // 	alert("Bonjour tout le monde, sauf Michel");
@@ -44,7 +44,7 @@ const salutationPersonalise = (nom) => {
 //? on est pas limité en nombre d'argument, on peut en mettre autant que necessaire, mais ils doivent être séparé par des virgules
 
 // const clockTelling = (heure, minutes, seconde) => {
-//     alert(`au 4eme bip il sera ${heure} ${minutes} ${seconde}, `);
+//     alert(`au 4eme bip il sera ${heure} ${minutes} ${seconde} `);
 // }
 
 // clockTelling(12,34,56)
@@ -62,16 +62,15 @@ const salutationPersonalise = (nom) => {
 // console.log(calulTVA(100, 1.196))
 // alert(calulTVA(100, 1.196))
 
-
 const countEinTxt = (text) => {
-    let countE = 0;
-    for(let i = 0; i < text.length; i++){
-        if(text[i] === 'e') countE++;
-    }
-    return countE;
+	let countE = 0;
+	for (let i = 0; i < text.length; i++) {
+		if (text[i] === "e") countE++;
+	}
+	return countE;
 };
 
 const txt =
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis molestias labore repudiandae cupiditate molestiae, quia, nemo accusamus eveniet nobis nesciunt inventore earum laboriosam animi, odio alias deleniti voluptates reprehenderit! A!";
+	"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis molestias labore repudiandae cupiditate molestiae, quia, nemo accusamus eveniet nobis nesciunt inventore earum laboriosam animi, odio alias deleniti voluptates reprehenderit! A!";
 
-    console.log('Il y a '+countEinTxt(txt)+' lettre e dans la phrase');
+console.log("Il y a " + countEinTxt(txt) + " lettre e dans la phrase");
