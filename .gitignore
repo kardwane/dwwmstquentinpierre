@@ -12,5 +12,6 @@
 
 #tp
 tp/01-juste-prix
-tp/02-todolist
-tp/03-pendu
+tp/02-pendu
+tp/03-todolist
+tp/04-fetch
