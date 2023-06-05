@@ -44,7 +44,7 @@
 // 	document.querySelector("#result").appendChild(newH3);
 //     //j'ajouter un h3 créer pour l'occasion en début de main
 // 	document.querySelector("main").prepend(createNewH3());
-	
+
 // });
 
 // //je peux créer une fonction de création d'element
@@ -60,9 +60,40 @@
 // }
 
 //! innnerHTML
-document.querySelector("#alertBtn").addEventListener("click", function () {
-    //j'ajouter du code HTML dans ma div #result
-	document.querySelector("#result").innerHTML += `
-    <h3 class="subtitle subtitle2" style="border: 1px solid blue;" id="superbeId2">je suis créer en JS 2</h3>
-    `;
+// document.querySelector("#alertBtn").addEventListener("click", function () {
+//     //j'ajouter du code HTML dans ma div #result
+// 	document.querySelector("#result").innerHTML += `
+//     <h3 class="subtitle subtitle2" style="border: 1px solid blue;" id="superbeId2">je suis créer en JS 2</h3>
+//     `;
+// });
+
+//! ========== Récuperer la valeur d'un champs input
+//* par exemple, sur validation d'un champ input, afficher son contenu dans la console
+
+//1er temps je recupere l'input
+const txtInput = document.querySelector("#txtInput");
+
+//2 je defini une action
+function action(input) {
+	//? le .value d'un champs input contient la valeur renseigné par l'utilisateur
+	console.log(input.value);
+	//? le .value d'un champs est TOUJOURS de type texte (pensez a convertir si vous devez faire des comparaisons mathématiques avec)
+}
+
+//3 j'associe une action sur la touche entrée de mon clavier
+txtInput.addEventListener("keydown", function (event) {
+	// console.log(event);
+	//si la touche frappé est la touche entrée
+	if (event.key === "Enter") {
+		//alors j'affiche le contenu de mon input
+
+		//event.target fais reference au champ concerné par l'action (ici notre input txt)
+		// action(event.target);
+
+		//? le this reprente l'objet en cours (ici mon input)
+		// console.log(this);
+		action(this);
+
+		// action(txtInput)
+	}
 });

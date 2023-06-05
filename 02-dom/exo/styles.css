@@ -1,0 +1,23 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+    margin: 0 5vw;
+}
+
+.fictive {
+	padding: 1em;
+    margin: 1em;
+	border: 1px solid #731111;
+border-radius: 10px;
+}
+
+.classAjout {
+	border: 1px dotted #351d6e;
+}
+
+.dark-mode{
+    background-color: rgb(16, 22, 22);
+    color: aliceblue;
+}
