@@ -12,7 +12,8 @@
 08-fetch/nw
 
 #tp
-tp/01-juste-prix
+tp/01-juste-prix/assets
+tp/01-juste-prix/index.html
 tp/02-pendu
 tp/03-todolist
 tp/04-fetch
