@@ -11,6 +11,7 @@
 08-fetch/nw
 
 #tp
-tp/02-pendu
+tp/02-pendu/assets
+tp/02-pendu/index.html
 tp/03-todolist
 tp/04-fetch
