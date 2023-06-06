@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+	margin: 2vh 2vw;
+
+	color: aliceblue;
+	font-size: 1.5em;
+	text-align: center;
+	text-shadow: #000305 5px 0 10px;
+
+    display: flex;
+
+    background-color: #000305;
+}
+
+main {
+	background-color: #0c2aa4;
+	border-radius: 1em;
+    padding: 1em;
+    
+}
+
+h1 {
+	color: gold;
+}
+
+button {
+	color: gold;
+	background-color: #0c2aa4;
+	padding: 0.5em;
+	font-size: 0.8em;
+	border-radius: 1em;
+}
+
+button:hover {
+	color: #0c2aa4;
+	background-color: gold;
+	padding: 0.5em;
+	font-size: 0.8em;
+	border-radius: 1em;
+}
+
+#tryDone,
+#result,
+.regle {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 3vh auto;
+}
+
+.hidden {
+	display: none;
+}
+
+.fade-in-text {
+	animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.flip {
+	animation: flipImg 2s forwards;
+}
+
+@keyframes flipImg {
+	0% {
+		rotate: 0deg;
+	}
+	100% {
+		rotate: 360deg;
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 430px) {
+    #tryDone,
+#result,
+.regle {
+	font-size: 1em;
+	font-weight: bold;
+	margin: 3vh auto;
+}
+
+iframe{
+    width: fit-content;
+    margin: 0 1vw;
+}
+}
+
+
+/* Tablet */
+/*
+@media screen and (max-width: 780px) {
+}
+*/
+
+/* Laptop */
+/*
+@media screen and (max-width: 1280px) {
+} 
+*/

@@ -23,4 +23,5 @@
     - Lorsque c'est terminé, le résultat ainsi qu'un lien de rechargement de page ou bouton recommencer doit apparaître.
     - Lorsque le jeu commence ou que l'on appui sur un bouton, le focus doit revenir sur l'input.
     - Lorsque le jeu est terminé, les boutons et input doivent être désactivé.
-7. (bonus) Le jeu serait plus vivant si il est animé avec par exemple une carte qui se retourne pour afficher le résultat et le bouton recommencer.
+7. une fois votre code terminé, mettez le sur un depot github puis envoyer moi le lien du dépot par mp discord
+8. (bonus) Le jeu serait plus vivant si il est animé avec par exemple une carte qui se retourne pour afficher le résultat et le bouton recommencer.

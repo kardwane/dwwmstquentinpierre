@@ -102,6 +102,7 @@ txtInput.addEventListener("keydown", function (event) {
 document.querySelector("#focusTxt").onclick=() => {
     //la methode .focus() permet de mettre le focus sur l'element voulu
     document.querySelector("#txtInput").focus();
+	this // ici this represente document.querySelector("#focusTxt")
 }
 
 //? pour desactiver un element, on va utiliser la propriété .disabled = true
@@ -109,3 +110,4 @@ document.querySelector("#disableTxt").onclick=() => {
     // la propriété .disabled permet de dé/sactiver l'element voulu (= true pour desactiver, ou = false pour activer)
     document.querySelector("#txtInput").disabled = true;
 }
+
