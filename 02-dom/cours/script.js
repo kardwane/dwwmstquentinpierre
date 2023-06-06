@@ -111,3 +111,9 @@ document.querySelector("#disableTxt").onclick=() => {
     document.querySelector("#txtInput").disabled = true;
 }
 
+document.querySelector("#createImg").addEventListener('click', () => {
+	//exemple de création d'image
+	const newImg = document.createElement('img')
+	newImg.src = 'https://3c1703fe8d.site.internapcdn.net/newman/csz/news/800/2012/aredbelliedp.jpg'
+	document.querySelector("#result").appendChild(newImg)
+})
