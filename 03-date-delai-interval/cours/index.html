@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>le temps en JS</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="./script.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<button id="startClock" class="btn">Démarer l'horloge</button>
+			<button id="stopClock" class="btn">Stoper l'horloge</button>
+			<button id="startProgress" class="btn">Démarer progress bar</button>
+			<button id="stopProgress" class="btn">Stoper progress bar</button>
+		</header>
+		<main>
+			<section id="sectionDate">
+				<p id="pDay"></p>
+				<p id="pMonth"></p>
+				<p id="pYear"></p>
+				<p id="pHour"></p>
+			</section>
+			<p id="pClock"></p>
+			<div class="center-progress-bar">
+				<progress value="0" max="100" id="progressBar"></progress>
+			</div>
+		</main>
+	</body>
+</html>

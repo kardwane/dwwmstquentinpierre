@@ -36,20 +36,25 @@ let tryNumber = 0;
 
 // fonction permettant de vérifier le prix
 function checkPrice(inputPrice) {
+	
 	tryNumber++; // je compte un essai supplémentaire => tryNumber = tryNumber + 1
 	let classColor = "orange";
 	//verification du nombre d'essai
 	if (tryNumber >= 7) {
 		//Defaite
 		endOfGame(false);
-		
+
 		//video facepalm
 		tryDone.innerHTML += `<iframe class="flip" width="560" height="315" src="https://www.youtube.com/embed/g-bVEc8oZvk?controls=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
 		return; // fin du jeu on arrete l'execution du code ici
-
 	} else {
 		//vérification de la saisie ()
-		if (inputPrice < 0 || inputPrice > 100 || isNaN(inputPrice)) {
+		if (
+			inputPrice < 0 ||
+			inputPrice > 100 ||
+			isNaN(inputPrice) ||
+			inputPrice === ""
+		) {
 			result.textContent =
 				"Votre saisie doit être une valeur numérique compris entre 0 et 100";
 			newTurn();
@@ -83,7 +88,9 @@ function checkPrice(inputPrice) {
 		result.style.backgroundColor = classColor;
 	}
 	// préparation du tour suivant
+	
 	newTurn();
+
 }
 
 //preparre le tour suivant
@@ -98,6 +105,7 @@ const newTurn = () => {
 
 	price.value = ""; // vide la zone de saisie
 	price.focus(); // remet le focus sur mon input
+
 };
 
 //pour gerer la fin de partie
@@ -118,11 +126,9 @@ function endOfGame(res) {
 		? `Vous avez gagné le lot suivant : ${giftArray[selectedGift]}`
 		: `Le prix à trouver était : ${priceToFind}`;
 	result.style.backgroundColor = classColor;
-	console.log("end");
 }
 
 //! je gere les evenements
-
 //j'ajoute l'appel à la fonction checkPrice() sur l'evenement "click"
 submitBtn.addEventListener("click", () => checkPrice(parseInt(price.value)));
 

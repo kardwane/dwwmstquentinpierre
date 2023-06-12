@@ -1,7 +1,8 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+	padding: 0;
+	margin: 0;
 }
+
 body {
 	margin: 2vh 2vw;
 
@@ -10,16 +11,15 @@ body {
 	text-align: center;
 	text-shadow: #000305 5px 0 10px;
 
-    display: flex;
+	display: flex;
 
-    background-color: #000305;
+	background-color: #000305;
 }
 
 main {
 	background-color: #0c2aa4;
 	border-radius: 1em;
-    padding: 1em;
-    
+	padding: 1em;
 }
 
 h1 {
@@ -48,6 +48,34 @@ button:hover {
 	font-size: 1.3em;
 	font-weight: bold;
 	margin: 3vh auto;
+}
+
+.timer{
+	display: flex;
+	justify-content: center;
+}
+
+.timer p{
+	margin-right: 2vw;
+}
+
+progress {
+	width: 50vw;
+	height: 5vh;
+	background-color: #0c2aa4;
+	margin-bottom: 3vh;
+}
+
+progress::-moz-progress-bar {
+	background-color: gold;
+}
+
+progress::-webkit-progress-value {
+    background-color: chartreuse;
+}
+
+progress::-webkit-progress-bar {
+    background-color: chartreuse;
 }
 
 .hidden {
@@ -82,20 +110,19 @@ button:hover {
 
 /* Mobile */
 @media screen and (max-width: 430px) {
-    #tryDone,
-#result,
-.regle {
-	font-size: 1em;
-	font-weight: bold;
-	margin: 3vh auto;
-}
+	#tryDone,
+	#result,
+	.regle {
+		font-size: 1em;
+		font-weight: bold;
+		margin: 3vh auto;
+	}
 
-iframe{
-    width: fit-content;
-    margin: 0 1vw;
+	iframe {
+		width: fit-content;
+		margin: 0 1vw;
+	}
 }
-}
-
 
 /* Tablet */
 /*

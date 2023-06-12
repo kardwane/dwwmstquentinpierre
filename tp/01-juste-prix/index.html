@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Juste prix</title>
-		<script src="./assets/js/justeprix.js" defer></script>
+		<script src="./assets/js/justeprix-timer.js" defer></script>
 		<link rel="stylesheet" href="./assets/css/justeprix.css">
 	</head>
 	<body>
@@ -17,6 +17,10 @@
 				de l'objet mystere ce prix est compris entre 0 et 100, c'est un entier, si
 				vous trouvez le bon prix avant les 7 essais, vous repartez avec le prix.
 			</p>
+			<div class="timer">
+				<p id="timer"></p>
+				<progress value="0" max="5" id="progressBar"></progress>
+			</div>
 			<label for="price">Prix</label>
 			<!-- l id sert identifier l element du coté javascript -->
 			<input type="number" id="price" placeholder="Votre prix" required />

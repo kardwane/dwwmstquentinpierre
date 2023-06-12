@@ -2,6 +2,8 @@
 01-syntaxe/05-fonctions/coursnw
 01-syntaxe/05-fonctions/exo/prep
 02-dom/nw
+03-date-delai-interval/cours/script.js
+03-date-delai-interval/cours/style.css
 03-date-delai-interval/nw
 04-apiform/cours/*
 04-apiform/nw
@@ -11,7 +13,6 @@
 08-fetch/nw
 
 #tp
-tp/02-pendu/assets
-tp/02-pendu/index.html
+tp/01-juste-prix/assets/js/justeprix-timer.js
 tp/03-todolist
 tp/04-fetch
