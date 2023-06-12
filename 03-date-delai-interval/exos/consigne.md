@@ -1,8 +1,10 @@
-# début
+# Exo Date, délai et interval
+
+## Exo 1
 créer un bouton qui logera en console ou sur votre page web un chiffre alétoire compris entre 500 et 1000 et ceux toutes les 2 secondes.
 on pourra lancer ou arreter l'opération via des boutons (start et stop)
 
-# la gestion du temps - tp
+## Exo 2
 
 Pour mettre en application ce que vous avez vu au sujet de la fonction setTimeout (https://developer.mozilla.org/fr/docs/Web/API/setTimeout).
 
