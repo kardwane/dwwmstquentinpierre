@@ -1,7 +1,9 @@
+//je recupere mes elements HTML
 const maskedWord = document.querySelector("#maskedWord");
 const hangmanStep = document.querySelector("#hangmanStep");
 const restart = document.querySelector(".restart");
 const vKeyboard = document.querySelector("#vKeyboard");
+//je créer ma liste de mots
 const words = [
 	"tonneaux",
 	"gomme",
@@ -19,9 +21,12 @@ const words = [
 	"xylophone",
 	"anticonstitutionnellement",
 ];
+//je défini les lettres joubales
 const letters = "azertyuiopqsdfghjklmwxcvbn";
+//je défini les erreurs au nombre de 7
 const endgame = 7;
 
+//des variables utilisé dans le programme
 let randomIndex, wordToFind, error, isWin;
 
 //permet d'initialiser les parametres du jeu par défaut
@@ -41,10 +46,10 @@ const init = () => {
 	for (let i = 0; i < wordToFind.length; i++) {
 		newMaskedWord += "*";
 	}
-	//je remet le flag de victoire a faux
-	isWin = false;
 	// j'affiche le mot à trouver
 	maskedWord.textContent = newMaskedWord;
+	//je remet le flag de victoire a faux
+	isWin = false;
 	//je créer le clavier virtuel
 	createVirtualKeyboard();
 };
@@ -53,29 +58,30 @@ const init = () => {
 const createVirtualKeyboard = () => {
 	vKeyboard.innerHTML = "";
 	//je boucle sur les lettres
-	for (let i = 0; i < letters.length; i++) {
+	letters.split("").forEach((letter) => {
 		// pour chaque lettre, je créer un bouton associé
 		let btn = document.createElement("button");
 		// je met en étiquette le texte de la lettre
-		btn.textContent = letters[i].toUpperCase();
+		btn.textContent = letter.toUpperCase();
 		// je met en id la lettre en cours
-		btn.id = letters[i];
+		btn.id = letter;
 		// je met la class css sur la lettre en cours
 		btn.classList.add("btn-letter");
-		// j'associer l'action de verification de lettre sur le bouton
+		// j'associe l'action de verification de lettre sur le bouton
 		btn.onclick = function () {
 			checkLetter(this.id);
 		};
 		// une fois que le bouton a été créé, je l'ajoute au clavier
 		vKeyboard.appendChild(btn);
-	}
+	});
 };
 
 const checkLetter = (letter) => {
-	// je désactive le bouton correspondant à la lettre
-	document.querySelector("#" + letter).disabled = true;
-	// est ce que la lettre est dans le mot à trouver?
-	if (wordToFind.indexOf(letter) === -1) {
+	// est ce que la lettre est dans le mot à trouver? et que la lettre n'as pas encore était joué
+	if (
+		wordToFind.indexOf(letter) === -1 &&
+		document.querySelector("#" + letter).disabled === false
+	) {
 		looseTurn();
 	} else {
 		//je créer une nouvelle version du mot à trouver
@@ -88,6 +94,8 @@ const checkLetter = (letter) => {
 			createEndMessage();
 		}
 	}
+	// je désactive le bouton correspondant à la lettre
+	document.querySelector("#" + letter).disabled = true;
 };
 
 const looseTurn = () => {
@@ -134,7 +142,9 @@ const updateMaskedWord = (wordState, letter) => {
 			//sinon je garde l'état actuelle de la lettre
 			newstate += wordState[i];
 		}
+		console.log(newstate);
 	}
+	console.log("============================================================");
 	return newstate;
 };
 
@@ -197,4 +207,5 @@ window.addEventListener("keyup", (e) => {
 	}
 });
 
+//je lance le jeu
 init();

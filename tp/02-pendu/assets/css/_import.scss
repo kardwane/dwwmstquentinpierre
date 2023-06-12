@@ -1,5 +1,7 @@
+/*création de variable */
 $appGreen: rgba(8, 57, 8, 0.8);
 
+/*créer des modele de styles */
 @mixin endmessage {
     font-family: cursive;
     font-size: 3em;
@@ -8,7 +10,7 @@ $appGreen: rgba(8, 57, 8, 0.8);
     justify-content: center;
     align-items: center;
     background-color: $appGreen;
-    border-radius: 3%;
+    border-radius: 10px;
     padding: 0.5rem;
     img{
         margin-left: 2em;
