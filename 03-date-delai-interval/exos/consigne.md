@@ -10,8 +10,8 @@ Pour mettre en application ce que vous avez vu au sujet de la fonction setTimeou
 
 Il vous est demandé de reprendre un de vos deux projets (le pendu ou le juste prix, au choix) et de lui ajouter un timer. 
 
-L'idée est de limiter la durée d'un tour de jeu a 30 secondes. si les 30 secondes sont dépassés alors :
+L'idée est de limiter la durée d'un tour de jeu à 30 secondes. si les 30 secondes sont dépassés alors :
  - le joueur perd son tour et perd une vie
  - vérification si defaite ou non (nombre de vie restante)
  - un nouveau tour commence
- - le timer revient a 0
+ - le timer revient à 0

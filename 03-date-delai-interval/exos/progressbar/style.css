@@ -1,0 +1,22 @@
+main {
+	text-align: center;
+}
+
+#progressbar {
+    margin-top: 5vh;
+	width: 80vw;
+	height: 10vh;
+	background-color: rgb(6, 0, 174);
+}
+
+#progress::-moz-progress-bar {
+	background-color: rgb(255, 255, 255);
+}
+
+#progress::-webkit-progress-value {
+	background-color: rgb(255, 255, 255);
+}
+
+#progress::-webkit-progress-bar {
+	background-color: rgb(255, 255, 255);
+}
