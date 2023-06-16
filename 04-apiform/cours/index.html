@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>form</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<script src="form.js" defer></script>
+	</head>
+	<body class="container">
+		<header>
+			<h1 class="title is-1 has-text-centered">Les formulaires en JS</h1>
+		</header>
+		<main>
+			<form action="test.html" method="post" name="exampleForm">
+				<div class="field has-icons-right">
+					<label class="label">Nom</label>
+					<div class="control has-icons-left has-icons-right">
+						<input
+							class="input"
+							type="text"
+							placeholder="Text input"
+							name="name"
+							id="name"
+						/>
+						<span class="icon is-small is-left">
+							<i class="fa-solid fa-signature"></i>
+						</span>
+					</div>
+				</div>
+
+				<div class="field">
+					<label class="label">Username</label>
+					<div class="control has-icons-left has-icons-right">
+						<input
+							class="input"
+							type="text"
+							placeholder="Text input"
+							value="bulma"
+							name="username"
+						/>
+						<span class="icon is-small is-left">
+							<i class="fas fa-user"></i>
+						</span>
+					</div>
+					<p class="help is-success is-hidden">This username is available</p>
+				</div>
+
+				<div class="field">
+					<label class="label">Email</label>
+					<div class="control has-icons-left has-icons-right">
+						<input
+							class="input"
+							type="email"
+							placeholder="Email input"
+							value="hello@exemple.com"
+							name="email"
+							id="email"
+						/>
+						<span class="icon is-small is-left">
+							<i class="fas fa-envelope"></i>
+						</span>
+					</div>
+					<p class="help is-danger is-hidden">
+						Cette adresse mail n'est pas valide
+					</p>
+				</div>
+
+				<div class="field">
+					<label class="label">Sujet</label>
+					<div class="control">
+						<div class="select">
+							<select name="select" id="select">
+								<option selected value="#">Select dropdown</option>
+								<option value="option1">With options</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="field mt-5">
+					<label class="label ">Message</label>
+					<div class="control">
+						<textarea
+							class="textarea"
+							placeholder="Textarea"
+							name="textarea"
+							id="textarea"
+						></textarea>
+					</div>
+				</div>
+
+				<div class="field">
+					<div class="control">
+						<label class="checkbox">
+							<input
+								type="checkbox"
+								name="checkbox"
+								id="checkbox"
+								value="cguok"
+							/>
+							j'accepte les <a href="#">CGU</a>
+						</label>
+					</div>
+				</div>
+
+				<div class="field">
+					<div class="control">
+						<label class="radio">
+							<input type="radio" name="question" id="question" />
+							Yes
+						</label>
+						<label class="radio">
+							<input type="radio" name="question" id="question" />
+							No
+						</label>
+					</div>
+				</div>
+
+				<div class="field is-grouped">
+					<div class="control">
+						<button class="button is-link" type="submit" id="submitBtn">
+							Envoyer
+						</button>
+					</div>
+					<div class="control">
+						<button class="button is-link is-light" type="reset">Vider</button>
+					</div>
+				</div>
+			</form>
+		</main>
+	</body>
+</html>

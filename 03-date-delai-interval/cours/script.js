@@ -5,9 +5,23 @@ const pClock = document.querySelector("#pClock");
 //? en JS il existe un objet date qui contient la date et l'heure du moment de sa création
 const date = new Date();
 // getDay nous rend le jour (sans le 0 initiale)
-document.querySelector("#pDay").textContent = date.getDay() + "/";
-// getMonth nous rend le mois (sans le 0 initiale)
-document.querySelector("#pMonth").textContent = date.getMonth() + "/";
+document.querySelector("#pDay").textContent = date.getDate() + "/";
+// getDay nous rend le jour de la semaine(sans le 0 initiale)
+// document.querySelector("#pDay").textContent = date.getDay() + "/";
+// getMonth nous rend le mois (sans le 0 initiale, /!\ janvier = 0)
+document.querySelector("#pMonth").textContent =
+	//if ternaire pour mettre le 0 ou non sur le n° de mois
+	date.getMonth() + 1 < 10
+		? "0" + (date.getMonth() + 1) + "/"
+		: date.getMonth() + 1 + "/";
+		// * le if ternaire ci dessus peut être réecrit de maniere plus traditionel de la sorte :
+		/*
+		if(date.getMonth() + 1 < 10){
+			document.querySelector("#pMonth").textContent =  "0" + (date.getMonth() + 1) + "/"
+		} else {
+			document.querySelector("#pMonth").textContent = date.getMonth() + 1 + "/"
+		}
+		*/
 // getFullYear nous rend l'année sur 4 chiffres
 document.querySelector("#pYear").textContent = date.getFullYear();
 // toLocaleTimeString nous rend l'heure, les minutes et les secondes en un string.

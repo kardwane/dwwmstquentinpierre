@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.input-rouge{
+    border: 1px solid red;
+    color: red;
+}
+
+.input-vert{
+    border: 1px solid green;
+    color: green;
+}
+
+.color-rouge{
+    color:red;
+}
+
+.color-vert{
+    color: green;
+}

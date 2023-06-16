@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>form</title>
+        <link rel="stylesheet" href="./demo.css">
+		<script src="./demo.js" defer></script>
+	</head>
+	<body>
+		<main>
+			<form id="formDemo" name="formDemo" method="post">
+				<div>
+					<label for="nom">Nom</label>
+					<input type="text" name="nom" id="nom"/>
+				</div>
+
+				<label for="email">email</label>
+				<input type="email" name="email" id="email" />
+
+                <label for="tel">email</label>
+				<input type="tel" name="tel" id="tel" />
+
+				<label for="description">Description</label>
+				<textarea name="description" id="description"></textarea>
+
+				<label for="ville">Ville</label>
+				<select name="ville" id="ville">
+					<option value="#" selected>Veuillez Choisir une ville</option>
+					<option value="lille">Lille</option>
+					<option value="stquentin">Saint Quentin</option>
+					<option value="paris">Paris</option>
+				</select>
+
+				<label for="agree">agree</label>
+				<input type="checkbox" name="agree" id="agree" value="ok" />
+
+				<label for="radio">radio</label>
+				<input type="radio" name="radio" id="radio" />Oui
+				<input type="radio" name="radio" id="radio" />Non
+
+				<button type="submit">Envoyer</button>
+			</form>
+		</main>
+	</body>
+</html>
