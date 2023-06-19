@@ -1,0 +1,15 @@
+.bord-rouge{
+    border: 1px solid red;
+}
+
+.txt-rouge{
+    color: red;
+}
+
+.bord-vert{
+    border: 1px solid green;
+}
+
+.txt-vert{
+    color: green;
+}

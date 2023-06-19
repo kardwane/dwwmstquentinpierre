@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>formulaire</title>   
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
+    </head>
+	<body>
+		<header><h1>Les formulaires</h1></header>
+		<main>
+            <form action="toto.html" name="formulaire" id="formulaire">
+				<div>
+					<label for="nom">Nom</label>
+					<input type="text" id="nom" name="nom" placeholder="Votre nom"/>
+				</div>
+
+                <div>
+					<label for="tel">Tel</label>
+					<input type="tel" id="tel" name="tel" placeholder="Votre tel"/>
+				</div>
+
+                <div>
+					<label for="mdp">Mot de passe</label>
+					<input type="password" id="mdp" name="mdp"  placeholder="Votre mdp" />
+				</div>
+
+                <div>
+					<label for="mdpConfirm">Confirmer le mot de passe</label>
+					<input type="password" id="mdpConfirm" name="mdpConfirm"  placeholder="Votre confirmation de mdp"/>
+				</div>
+
+                <div>
+					<label for="civilite">Mot de passe</label>
+					<select name="civilite" id="civilite">
+                        <option value="" selected>Veuillez choisir une civilité</option>
+                        <option value="mr">Monsieur</option>
+                        <option value="mme">Madame</option>
+                    </select>
+				</div>
+
+                <div>
+					<label for="commentaire">Commentaire</label>
+					<textarea name="commentaire" id="commentaire" cols="30" rows="10" placeholder="Votre commentaire"></textarea>
+				</div>
+
+                <div>
+					<label for="radio" id="lblRadio">Radio</label>
+					<input type="radio" id="radio" name="radio" value="oui"/>Oui
+					<input type="radio" id="radio" name="radio" value="non"/>Non
+				</div>
+
+                <div>
+					<label for="accord"  id="lblAccord">J'accepte les <a href="#">CGU</a> ?</label>
+					<input type="checkbox" id="accord" name="accord" value="cguok"/>
+				</div>
+
+				<div>
+                    <button type="submit">Envoyer</button>
+                </div>
+			</form>
+			<!-- <form action="toto.html" name="formulaire" id="formulaire">
+				<div>
+					<label for="nom">Nom</label>
+					<input type="text" id="nom" name="nom" placeholder="Votre nom" required minlength="3" maxlength="50"/>
+				</div>
+
+                <div>
+					<label for="tel">Tel</label>
+					<input type="tel" id="tel" name="tel" placeholder="Votre tel" required/>
+				</div>
+
+                <div>
+					<label for="mdp">Mot de passe</label>
+					<input type="password" id="mdp" name="mdp"  placeholder="Votre mdp" required/>
+				</div>
+
+                <div>
+					<label for="mdpConfirm">Confirmer le mot de passe</label>
+					<input type="password" id="mdpConfirm" name="mdpConfirm"  placeholder="Votre confirmation de mdp" required/>
+				</div>
+
+                <div>
+					<label for="civilite">Mot de passe</label>
+					<select name="civilite" id="civilite" required>
+                        <option value="" selected>Veuillez choisir une civilité</option>
+                        <option value="mr">Monsieur</option>
+                        <option value="mme">Madame</option>
+                    </select>
+				</div>
+
+                <div>
+					<label for="commentaire">Commentaire</label>
+					<textarea name="commentaire" id="commentaire" cols="30" rows="10" placeholder="Votre commentaire" required></textarea>
+				</div>
+
+                <div>
+					<label for="radio">Radio</label>
+					<input type="radio" id="radio" name="radio" required value="oui" />Oui
+					<input type="radio" id="radio" name="radio" required value="non"/>Non
+				</div>
+
+                <div>
+					<label for="accord">J'accepte les <a href="#">CGU</a> ?</label>
+					<input type="checkbox" id="accord" name="accord" required value="cguok"/>
+				</div>
+
+				<div>
+                    <button type="submit">Envoyer</button>
+                </div>
+			</form> -->
+		</main>
+	</body>
+</html>
