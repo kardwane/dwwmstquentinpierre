@@ -69,3 +69,16 @@ puis
 ```git merge branche1```
 
 cette opération se fait en local, il faut encore push vers le depot distant pour assurer la conformité des données entres les deux environments (local et distant) 
+
+Dans le cas ou une fusion concerne deux versions différente d'un même fichier, les outils de fusion vont être proposer par vs code. ces outils permettent de décider comment contruire une version commune du fichier en question.
+on aura le choix de : 
+- privilégier une version de fichier plûtot qu'une autre
+- fusionner les 2 versions concernés en choisissant quel version sera importé avant l'autre
+- ignorer le conflit (rarement recommmandé)
+
+### Supprimer une branche
+Si on souhaite supprimer une branche, il faut utiliser la commande
+```git branch –d nomDeLaBranche```
+ou
+```git branch –D nomDeLaBranche```
+pour forcer la suppression
