@@ -53,3 +53,19 @@ pour connaitre les branches disponible sur votre git :
 ```git branch```
 
 git indique la branche sur laquelle il travail en prefixant la branche par une *
+
+une fois que vous souhaitez integrer les modifications d'une branche sur la branche principale, on va utiliser la commande
+```git merge```
+
+Avant d'utiliser cette commande, assurez-vous d'etre sur la branche qui va récuperer la modification.
+Autrement assurez-vous d'etre sur le branche de destination
+
+exemple fusionné une branche *branche1* à la branche principal *main*
+
+```git checkout main```
+
+puis
+
+```git merge branche1```
+
+cette opération se fait en local, il faut encore push vers le depot distant pour assurer la conformité des données entres les deux environments (local et distant) 
