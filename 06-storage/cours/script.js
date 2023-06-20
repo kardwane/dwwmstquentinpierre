@@ -41,9 +41,3 @@ btnLocalDisplay.addEventListener("click", function () {
 	//pour recuperer un reference enregistrer dans le localStorage, on utilisera la methode .getItem('nomDeLaRef')
 	result.textContent = localStorage.getItem("txtInput");
 });
-
-//xss
-btnXss.addEventListener("click", function () {
-	// result.textContent = document.querySelector('#comment').value
-	result.innerHTML = document.querySelector("#comment").value;
-});

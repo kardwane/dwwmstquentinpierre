@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Storage</title>
+		<script src="./script.js" defer></script>
+	</head>
+	<body>
+		<header><h1>Exo : le profil (strorage JS)</h1></header>
+		<main>
+			<section>
+				<form action="#">
+					<fieldset>
+						<input type="text" id="txtPseudo" placeholder="Votre pseudo..." />
+						<input type="password" id="txtMdp" placeholder="Votre mdp..." />
+						<input type="email" id="txtEmail" placeholder="Votre email..." />
+					</fieldset>
+				</form>
+			</section>
+			<section>
+				<button id="btnDirect">Affichage "directe"</button>
+				<button id="btnSessionStore">Enregistrement sessionStorage</button>
+				<button id="btnSessionDisplay">Affichage sessionStorage</button>
+				<button id="btnLocalStore">Enregistrement localeStorage</button>
+				<button id="btnLocalDisplay">Affichage localeStorage</button>
+			</section>
+			<section id="result">
+				<p>
+					Pseudo :
+					<span id="pseudo"></span>
+				</p>
+                <p>
+					Mot de passe :
+					<span id="mdp"></span>
+				</p>
+                <p>
+					email :
+					<span id="email"></span>
+				</p>
+			</section>
+		</main>
+	</body>
+</html>
