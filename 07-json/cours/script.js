@@ -21,7 +21,7 @@ function saveData(e) {
 		// J'ajoute ces valeurs en tant que propriété
 		user[name] = value;
 	});
-	// J'obtien un objet contenant toute les valeurs de mon formulaire.
+	// J'obtient un objet contenant toutes les valeurs de mon formulaire.
 	showUser(user);
 	console.log(user);
 

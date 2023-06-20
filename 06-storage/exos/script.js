@@ -15,7 +15,9 @@ const email = document.querySelector("#email");
 //action des boutons
 //pour le bouton direct, on va simplement editer le textContent de notre result
 btnDirect.addEventListener("click", function () {
-	result.textContent = txtInput.value;
+	pseudo.textContent = txtPseudo.value;
+	mdp.textContent = txtMdp.value;
+	email.textContent = txtEmail.value;
 });
 
 //! fonctions
@@ -57,10 +59,13 @@ btnLocalStore.addEventListener("click", function () {
 	localStorage.setItem("txtPseudo", txtPseudo.value);
 	localStorage.setItem("txtMdp", txtMdp.value);
 	localStorage.setItem("txtEmail", txtEmail.value);
-	//afficahge
+	//affichage
 	displayLocalStorage();
 });
 
 btnLocalDisplay.addEventListener("click", function () {
 	displayLocalStorage();
 });
+
+//affichage direct
+
