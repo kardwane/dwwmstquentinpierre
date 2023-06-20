@@ -41,3 +41,7 @@ btnLocalDisplay.addEventListener("click", function () {
 	//pour recuperer un reference enregistrer dans le localStorage, on utilisera la methode .getItem('nomDeLaRef')
 	result.textContent = localStorage.getItem("txtInput");
 });
+
+
+
+prompt('Are you sure you want to')
