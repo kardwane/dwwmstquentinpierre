@@ -14,7 +14,6 @@ function saveData(e) {
 	e.preventDefault();
 	// Je transfère les données de mon formulaire à l'objet FormData
 	const data = new FormData(form);
-	// Je déclare un objet vide
 	let user = {};
 	// je boucle sur mon FormData pour obtenir toute les valeurs et indexation.
 	data.forEach((value, name) => {
@@ -59,3 +58,15 @@ const object = {
 	prenom: "Jean",
 	age: 30,
 };
+
+// Je déclare un objet vide
+const objet = {
+	nom: "valeur 1",
+	age: 14,
+	adulte: true,
+}
+console.log(objet);
+// pour acceder au propriété, on ne va utiliser un indice comme la tableau, mais directement le nom de la propriete
+console.log(objet.nom);
+console.log(objet.age);
+console.log(objet.adulte);

@@ -67,5 +67,3 @@ btnLocalDisplay.addEventListener("click", function () {
 	displayLocalStorage();
 });
 
-//affichage direct
-
