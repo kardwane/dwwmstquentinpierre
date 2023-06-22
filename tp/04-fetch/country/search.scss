@@ -1,30 +1,31 @@
-body{
-    margin: 0;
-    padding: 0;
-    margin: 0 5vw;
-    background-color: aquamarine;
-    main{
-        color: aliceblue;        
-        form{
-            margin: 1em 0;
-            background-color: darkgray;
-            border-radius: 0.5em;
-            text-align: center;
-            padding: 0.5em;
-        }
-        #result{
-            background-color: darkslategray;
-            color: aliceblue;
-            font-size: 1.2em;
-            border-radius: 0.5em;
-            padding: 1em;
-            text-align: center;
-            #nomPays{
-                text-transform: uppercase;
-            }
-            #drapeau{
-                width: 35vw;
-            }
-        }
-    }
+body {
+	margin: 0;
+	padding: 0;
+	margin: 0 5vw;
+	background-color: aquamarine;
+	main {
+		color: aliceblue;
+		form {
+			margin: 1em 0;
+			background-color: darkgray;
+			border-radius: 0.5em;
+			text-align: center;
+			padding: 0.5em;
+		}
+		#result {
+			background-color: darkslategray;
+			color: aliceblue;
+			font-size: 1.2em;
+			border-radius: 0.5em;
+			padding: 1em;
+			text-align: center;
+			.countryInfo {
+                border: 1px solid chartreuse;
+                margin-top: 2vh;
+				.flag {
+					width: 30vw;
+				}
+			}
+		}
+	}
 }
