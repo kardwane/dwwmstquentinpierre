@@ -1,0 +1,31 @@
+body {
+	margin: 0 5vw;
+	padding: 0;
+    background-color: darkslategrey;
+	#result {
+		display: flex;
+		flex-direction: column;
+		.joke {
+            display: flex;
+            flex-direction: column;
+			margin: 1vh 0;
+			border: 1px solid chartreuse ;
+            border-radius: 0.5em;
+            background-color: cadetblue;
+            align-items: center;
+			.jokeId {
+				color: aliceblue;
+			}
+			.jokeType {
+				color: darkblue;
+			}
+			.jokeSetup {
+				color: green;
+                text-align: center;
+			}
+			.jokePunchline {
+				color: yellow;
+			}
+		}
+	}
+}

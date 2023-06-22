@@ -66,7 +66,7 @@ const objet = {
 	adulte: true,
 }
 console.log(objet);
-// pour acceder au propriété, on ne va utiliser un indice comme la tableau, mais directement le nom de la propriete
+// pour acceder au propriété, on ne va pas utiliser un indice comme la tableau, mais directement le nom de la propriete
 console.log(objet.nom);
 console.log(objet.age);
 console.log(objet.adulte);

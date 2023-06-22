@@ -12,6 +12,4 @@
 08-fetch/nw
 
 #tp
-tp/01-juste-prix/assets/js/justeprix-timer.js
-tp/03-todolist
-tp/04-fetch
+tp/04-fetch/country/script.js

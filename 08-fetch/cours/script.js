@@ -1,7 +1,7 @@
 //! fetch : un moyen facile et logique de récupérer des ressources à travers le réseau de manière asynchrone..
 // const url = "https://official-joke-api.appspot.com/"
-// const url = "https://official-joke-api.appspot.com/random_joke"
-const url = "https://official-joke-api.appspot.com/random_ten"
+const url = "https://official-joke-api.appspot.com/random_joke"
+// const url = "https://official-joke-api.appspot.com/random_ten"
 // const url = "https://official-joke-api.appspot.com/jokes/random"
 // const url = "https://official-joke-api.appspot.com/jokes/ten"
 
