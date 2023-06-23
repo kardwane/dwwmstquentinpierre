@@ -28,9 +28,9 @@ function displayTodos() {
 		article.innerHTML = `
             <section id="todo${index}"> ${todo} (n° ${index})</section>
             <section>
-            <a href="#" onclick="displayUpdate(${index})"><img src="./assets/img/edit.svg" alt="edit"></a>
-            <a href="#" onclick="strikeTodo(${index})"><img src="./assets/img/check-circle.svg" alt="check"></a>
-            <a href="#" onclick="deleteTodo(${index})"><img src="./assets/img/trash-2.svg" alt="delete"></a>
+            <a href="#" onclick="displayUpdate(${index})"><img src="./assets/img/edit.svg" alt="edit" class="icone"></a>
+            <a href="#" onclick="strikeTodo(${index})"><img src="./assets/img/check-circle.svg" alt="check" class="icone"></a>
+            <a href="#" onclick="deleteTodo(${index})"><img src="./assets/img/trash-2.svg" alt="delete" class="icone"></a>
             </section>
         `;
 		todoList.appendChild(article);
@@ -80,6 +80,7 @@ function strikeTodo(index) {
 // sur le click du bouton raz, je reset l'affichage
 btnRaz.onclick = () => {
 	todos = ["Tâche exemple"]; // je reset le tableau de tache
+	localStorage.setItem("todos", todos.join(","));
 	displayTodos(); // je reinit l'affichage
 };
 
